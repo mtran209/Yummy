@@ -1,16 +1,14 @@
 import React, { Component } from 'react';
-import { Card, CardImg, CardBody, CardTitle, CardText } from 'reactstrap';
+import { Card, CardImg, CardText, CardHeader } from 'reactstrap';
 import { baseUrl } from '../shared/baseUrl';
 
 function RenderFeaturedMeals({ meal }) {
     if (meal.featured) {
         return (
             <Card>
-                <CardImg src={baseUrl + meal.image} alt={meal.name} />
-                <CardBody>
-                    <CardTitle>{meal.name}</CardTitle>
+                <CardHeader>{meal.name}</CardHeader>
+                <CardImg width='100%' src={baseUrl + meal.image} alt={meal.name} />
                     <CardText>{meal.description}</CardText>
-                </CardBody>
             </Card>
         )
     };
@@ -28,15 +26,17 @@ class Home extends Component {
         
         const featuredMeals = this.props.meals.filter(meal => meal.featured).map(meal => {
             return (
-                <div key={meal.id}>
+                <div className="col-sm" key={meal.id}>
                     <RenderFeaturedMeals meal={meal} />
                 </div>
             )
         });
         
         return (
-            <div>
+            <div className="container-fluid">
+                <div className="row">
                 {featuredMeals}
+                </div>
             </div>
         )
     }
