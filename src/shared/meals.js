@@ -11,7 +11,7 @@ export const MEALS = [
         image: "images/ramen2.png",
         name: 'Tonkatsu Ramen',
         description: 'A pork-based Japanese ramen dish served with traditional ramen noodles, chasu (roasted pork tenderloin), and fresh vegetables.',
-        featured: false,
+        featured: true,
     },
     {
         id: 3,

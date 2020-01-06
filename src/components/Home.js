@@ -6,9 +6,11 @@ function RenderFeaturedMeals({ meal }) {
     if (meal.featured) {
         return (
             <Card>
-                <CardHeader>{meal.name}</CardHeader>
+              
                 <CardImg width='100%' src={baseUrl + meal.image} alt={meal.name} />
+                <CardHeader>{meal.name}</CardHeader>
                     <CardText>{meal.description}</CardText>
+                    
             </Card>
         )
     };

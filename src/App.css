@@ -1,6 +1,22 @@
 .App {
   text-align: center;
+  font-family: 'Cormorant Infant', serif;
 }
+
+
+#navbar {
+  font-family: 'Bangers', cursive;
+  font-size: 30px;
+  color: #70D07B
+}
+
+#navbarbrand {
+  font-size: 60px;
+  color: #70D07B
+}
+
+
+
 
 .App-logo {
   height: 40vmin;
@@ -36,3 +52,4 @@
     transform: rotate(360deg);
   }
 }
+
