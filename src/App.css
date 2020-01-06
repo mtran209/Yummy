@@ -4,14 +4,20 @@
 }
 
 
-#navbar {
+.nav-link {
   font-family: 'Bangers', cursive;
-  font-size: 30px;
-  color: #70D07B
+  font-size: 25px;
+  color: #ECAB42;
+}
+
+.btn {
+  font-family: 'Bangers', cursive;
+  font-size: 25px;
 }
 
 #navbarbrand {
-  font-size: 60px;
+  font-family: 'Bangers', cursive;
+  font-size: 50px;
   color: #70D07B
 }
 
