@@ -5,15 +5,16 @@ import { baseUrl } from '../shared/baseUrl';
 class Header extends Component {
     render() {
         return (
-            <Navbar className="bg-light py-0" variant="light" id="navbar" sticky='top'>
-                <NavbarBrand id="navbarbrand" href="#home"><img src={baseUrl + '/images/bunbohue.png'} width="50" height="50" />  Yummy App</NavbarBrand>
+            <Navbar className="py-0" variant="light" id="navbar" sticky='top'>
+                <NavbarBrand id="navbarbrand" href="#home" className="ml-4"><img src={baseUrl + '/images/bunbohue.png'} width="50" height="50" />  Yummy App</NavbarBrand>
                 <Nav className="mr-auto nav">
-                    <NavLink href="#home">Home</NavLink>
-                    <NavLink href="#home">Meals</NavLink>
-                    <NavLink href="#home">About Us</NavLink>
-                    <NavLink href="#home">Contact US</NavLink>
+                    <NavLink href="#home">HOME</NavLink>
+                    <NavLink href="#home">MEALS</NavLink>
+                    <NavLink href="#home">ABOUT</NavLink>
+                    <NavLink href="#home">CONTACT</NavLink>
                 </Nav>
-                <Button className="btn-warning">Sign-In</Button>
+                <button className="passivebutton mr-3">WHAT SHOULD I EAT?</button>
+                <button className="activebutton">SIGN UP</button>
             </Navbar>
         )
     }

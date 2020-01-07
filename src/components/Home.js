@@ -1,22 +1,8 @@
 import React, { Component } from 'react';
 import { Card, CardImg, CardText, CardHeader } from 'reactstrap';
 import { baseUrl } from '../shared/baseUrl';
+import MealInfo from './MealInfo';
 
-function RenderFeaturedMeals({ meal }) {
-    if (meal.featured) {
-        return (
-            <Card>
-              
-                <CardImg width='100%' src={baseUrl + meal.image} alt={meal.name} />
-                <CardHeader>{meal.name}</CardHeader>
-                    <CardText>{meal.description}</CardText>
-                    
-            </Card>
-        )
-    };
-
-    return <div />;
-}
 
 class Home extends Component {
     
@@ -29,7 +15,7 @@ class Home extends Component {
         const featuredMeals = this.props.meals.filter(meal => meal.featured).map(meal => {
             return (
                 <div className="col-sm" key={meal.id}>
-                    <RenderFeaturedMeals meal={meal} />
+                    <MealInfo meal={meal} />
                 </div>
             )
         });

@@ -14,7 +14,7 @@ class Main extends Component {
     }
 
     render() {
-        return(
+        return (
             <div className="container-fluid p-0">
                 <Header />
                 <Home meals={this.state.meals} />
