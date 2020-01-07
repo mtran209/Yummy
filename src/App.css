@@ -26,10 +26,30 @@
 
 #search label {
   font-family: 'Bangers', cursive;
+  font-size: 30px;
+  color:  #ECAB42;
+}
+
+#search h1 {
+  font-family: 'Bangers', cursive;
   font-size: 70px;
   color:  #ECAB42;
 }
 
+#difform {
+  margin-left: 650px;
+  margin-top: 70px;
+  margin-bottom: 30px;
+  padding: 0;
+}
+
+
+#typeform {
+  margin-right: 650px;
+  margin-top: 70px;
+  margin-bottom: 30px;
+  padding: 0;
+}
 
 li {
   font-family: 'Roboto', sans-serif;
