@@ -1,6 +1,4 @@
 import React, { Component } from 'react';
-import { Card, CardImg, CardText, CardHeader } from 'reactstrap';
-import { baseUrl } from '../shared/baseUrl';
 import MealInfo from './MealInfo';
 
 

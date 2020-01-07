@@ -3,6 +3,7 @@ import Home from './Home';
 import { MEALS } from '../shared/meals';
 import Header from './Header';
 import Footer from './Footer';
+import Banner from './Banner';
 
 class Main extends Component {
 
@@ -17,6 +18,7 @@ class Main extends Component {
         return (
             <div className="container-fluid p-0">
                 <Header />
+                <Banner />
                 <Home meals={this.state.meals} />
                 <Footer />
             </div>
