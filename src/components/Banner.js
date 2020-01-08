@@ -15,7 +15,7 @@ class Banner extends Component {
                 </div>
                 <div className="container-fluid" id="bannerrow">
                     <div className="row">
-                        <div className="col">
+                        <div className="col-sm">
                             <h1 className="py-5">Find Your Next Meal Idea <i className="fa fa-lightbulb" /></h1>
                         </div>
                     </div>

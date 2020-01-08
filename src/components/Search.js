@@ -44,10 +44,10 @@ class Search extends Component {
         return (
             <div className="row" style={{ height: '100%' }}>
                 <div className="col mx-auto" id="search">
-                    <h1>What Are You Craving?</h1>
+                    <h1 className="pb-5">What Are You Craving?</h1>
                     <Form onSubmit={e => this.handleSearch(e)}>
                         <FormGroup row>
-                            <Col id="difform">
+                            <Col>
                                 <Label for="difficulty">My cooking is
                                     <Input
                                         type="select"
@@ -60,7 +60,9 @@ class Search extends Component {
                                     </Input>
                                 </Label>
                             </Col>
-                            <Col id="typeform">
+                            </FormGroup>
+                            <FormGroup row>
+                            <Col>
                                 <Label for="mealtime">I want
                                     <Input
                                         type="select"

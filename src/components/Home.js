@@ -12,7 +12,7 @@ class Home extends Component {
         
         const featuredMeals = this.props.meals.filter(meal => meal.featured).map(meal => {
             return (
-                <div className="col-sm" key={meal.id}>
+                <div className="col-xl-3" key={meal.id}>
                     <MealInfo meal={meal} />
                 </div>
             )

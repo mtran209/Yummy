@@ -4,6 +4,10 @@
   font-size: 20px;
 }
 
+select {
+  font-family: 'Roboto', sans-serif !important;
+}
+
 #banner {
   background-image: url('./shared/banner.jpg');
   height: 120vh;
@@ -129,7 +133,6 @@ li {
 }
 
 .card-text {
-  height: 200px;
   padding-top: 40px;
   padding-left: 40px;
   padding-right: 40px;
