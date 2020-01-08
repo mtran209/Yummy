@@ -17,8 +17,8 @@ class Main extends Component {
     render() {
         return (
             <div className="container-fluid p-0">
-                <Header />
-                <Banner />
+                <Header meals={this.state.meals} />
+                <Banner meals={this.state.meals}/>
                 <Home meals={this.state.meals} />
                 <Footer />
             </div>
