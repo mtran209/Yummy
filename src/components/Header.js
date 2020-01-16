@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import { Navbar, Nav, NavLink, NavbarBrand, Modal, ModalHeader, ModalBody} from 'reactstrap';
+import { Navbar, Nav, NavbarBrand, Modal, ModalHeader, ModalBody} from 'reactstrap';
 import MealInfo from './MealInfo';
+import { NavLink } from 'react-router-dom';
 
 
 class Header extends Component {
@@ -40,10 +41,10 @@ class Header extends Component {
             <Navbar className="py-0" variant="light" id="navbar" sticky='top'>
                 <NavbarBrand id="navbarbrand" href="#home" className="ml-4"><i className="fa fa-cutlery" style={{ color: '#70D07B' }} />  Yummy App</NavbarBrand>
                 <Nav className="mr-auto nav">
-                    <NavLink href="#home">HOME</NavLink>
-                    <NavLink href="#home">MEALS</NavLink>
-                    <NavLink href="#home">ABOUT</NavLink>
-                    <NavLink href="#home">CONTACT</NavLink>
+                    <NavLink className="nav-link" to="/home">HOME</NavLink>
+                    <NavLink className="nav-link" to="/meals">MEALS</NavLink>
+                    <NavLink className="nav-link" to="/about">ABOUT</NavLink>
+                    <NavLink className="nav-link" to="/contact">CONTACT</NavLink>
                 </Nav>
                 <button onClick={this.toggleModal} className="passivebutton mr-3">PICK FOR ME</button>
                 <button className="activebutton">SIGN UP</button>

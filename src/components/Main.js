@@ -3,7 +3,9 @@ import Home from './Home';
 import { MEALS } from '../shared/meals';
 import Header from './Header';
 import Footer from './Footer';
-import Banner from './Banner';
+import Meals from './Meals';
+import Contact from './Contact';
+import { Switch, withRouter, Route, Redirect } from 'react-router-dom';
 
 class Main extends Component {
 
@@ -18,12 +20,16 @@ class Main extends Component {
         return (
             <div className="container-fluid p-0">
                 <Header meals={this.state.meals} />
-                <Banner meals={this.state.meals}/>
-                <Home meals={this.state.meals} />
+                <Switch>
+                    <Route exact path='/meals' render={() => <Meals meals={this.state.meals} />} />
+                    <Route exact path='/home' render={() => <Home meals={this.state.meals} />} />
+                    <Route exact path='/contact' render={() => <Contact />} />
+                    <Redirect to='./home' />
+                </Switch>
                 <Footer />
             </div>
         )
     }
 }
 
-export default Main;
+export default withRouter(Main);

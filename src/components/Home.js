@@ -1,30 +1,18 @@
 import React, { Component } from 'react';
-import MealInfo from './MealInfo';
-
+import Search from './Search';
 
 class Home extends Component {
-    
+
     constructor(props) {
         super(props);
     }
-    
+
     render() {
-        
-        const featuredMeals = this.props.meals.filter(meal => meal.featured).map(meal => {
-            return (
-                <div className="col-xl-3" key={meal.id}>
-                    <MealInfo meal={meal} />
-                </div>
-            )
-        });
-        
         return (
-            <div className="container-fluid">
-                <div className="row">
-                {featuredMeals}
-                </div>
+            <div className="container-fluid" id="banner">
+                <Search meals={this.props.meals} />
             </div>
-        )
+        );
     }
 }
 
