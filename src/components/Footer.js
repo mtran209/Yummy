@@ -17,7 +17,7 @@ function Footer() {
                         <h3 className="pt-5 pb-2">Contact</h3>
                         <ul className="list-unstyled pb-5">
                             <li><Link to='./contact'>Contact Us</Link></li>
-                            <li>About</li>
+                            <li><Link to='./about'>About</Link></li>
                         </ul>
                     </div>
                     <div className="col">

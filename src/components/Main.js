@@ -5,6 +5,7 @@ import Header from './Header';
 import Footer from './Footer';
 import Meals from './Meals';
 import Contact from './Contact';
+import About from './About';
 import { Switch, withRouter, Route, Redirect } from 'react-router-dom';
 
 class Main extends Component {
@@ -24,6 +25,7 @@ class Main extends Component {
                     <Route exact path='/meals' render={() => <Meals meals={this.state.meals} />} />
                     <Route exact path='/home' render={() => <Home meals={this.state.meals} />} />
                     <Route exact path='/contact' render={() => <Contact />} />
+                    <Route exact path='/about' render={() => <About meals={this.state.meals} />} />
                     <Redirect to='./home' />
                 </Switch>
                 <Footer />

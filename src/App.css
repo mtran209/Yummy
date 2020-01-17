@@ -4,6 +4,13 @@
   font-size: 20px;
 }
 
+h1 {
+  font-family: 'Bangers', cursive;
+  font-size: 80px;
+  color: #ECAB42
+}
+
+
 #banner {
   background-image: url('./shared/banner.jpg');
   height: 120vh;
@@ -16,7 +23,7 @@
 
 #bannerrow h1 {
   font-family: 'Bangers', cursive;
-  font-size: 90px;
+  font-size: 80px;
   color:  #ECAB42;
 }
 

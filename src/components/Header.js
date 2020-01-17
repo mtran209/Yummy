@@ -41,10 +41,10 @@ class Header extends Component {
             <Navbar className="py-0" variant="light" id="navbar" sticky='top'>
                 <NavbarBrand id="navbarbrand" href="#home" className="ml-4"><i className="fa fa-cutlery" style={{ color: '#70D07B' }} />  Yummy App</NavbarBrand>
                 <Nav className="mr-auto nav">
-                    <NavLink className="nav-link" to="/home">HOME</NavLink>
-                    <NavLink className="nav-link" to="/meals">MEALS</NavLink>
-                    <NavLink className="nav-link" to="/about">ABOUT</NavLink>
-                    <NavLink className="nav-link" to="/contact">CONTACT</NavLink>
+                    <NavLink className="nav-link" to="/home">Home</NavLink>
+                    <NavLink className="nav-link" to="/meals">Meals</NavLink>
+                    <NavLink className="nav-link" to="/about">About</NavLink>
+                    <NavLink className="nav-link" to="/contact">Contact</NavLink>
                 </Nav>
                 <button onClick={this.toggleModal} className="passivebutton mr-3">PICK FOR ME</button>
                 <button className="activebutton">SIGN UP</button>
