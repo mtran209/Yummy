@@ -4,6 +4,11 @@
   font-size: 20px;
 }
 
+.card-img {
+  width: '50%';
+  height: '50%';
+}
+
 h1 {
   font-family: 'Bangers', cursive;
   font-size: 80px;
