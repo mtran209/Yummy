@@ -4,9 +4,33 @@
   font-size: 20px;
 }
 
+
+
 .card-img {
   width: '50%';
   height: '50%';
+}
+
+img:hover, .passivebutton:hover, .activebutton:hover {
+  background-color: #ECAB42;
+}
+
+#navbarbrand:hover {
+  color: #70D07B;
+}
+
+a {
+  color: black;
+}
+
+a:hover {
+  color: #ECAB42;
+}
+
+
+
+.nav-link:hover {
+  color: #ECAB42;
 }
 
 h1 {

@@ -9,15 +9,15 @@ function Footer() {
                     <div className="col">
                         <h3 className="pt-5 pb-2">Explore</h3>
                         <ul className="list-unstyled pb-5">
-                            <li><Link to='./home'>Home</Link></li>
-                            <li><Link to='./meals'>Meals</Link></li>
+                            <li id="footerlink"><Link to='./home'>Home</Link></li>
+                            <li id="footerlink"><Link to='./meals'>Meals</Link></li>
                         </ul>
                     </div>
                     <div className="col">
                         <h3 className="pt-5 pb-2">Contact</h3>
                         <ul className="list-unstyled pb-5">
-                            <li><Link to='./contact'>Contact Us</Link></li>
-                            <li><Link to='./about'>About</Link></li>
+                            <li id="footerlink"><Link to='./contact'>Contact Us</Link></li>
+                            <li id="footerlink"><Link to='./about'>About</Link></li>
                         </ul>
                     </div>
                     <div className="col">

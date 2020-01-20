@@ -24,9 +24,9 @@ class Contact extends Component {
 
     render() {
         return (
-            <div className='container contact p-5'>
+            <div className='container-fluid contact p-5'>
                 <div className="row">
-                    <div className="col-6 mx-auto">
+                    <div className="col-md-6 mx-auto">
                         <Form onSubmit={e => this.handleSubmit(e)}>
                             <h1>Contact Us</h1>
                             <FormGroup row>
