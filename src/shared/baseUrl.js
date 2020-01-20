@@ -1,1 +1,1 @@
-export const baseUrl = 'https://www.react.minhtran.app/src/shared/images/';
+export const baseUrl = 'https://www.react.minhtran.app/';

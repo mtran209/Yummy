@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Navbar, Nav, NavbarBrand, Modal, ModalHeader, ModalBody} from 'reactstrap';
 import MealInfo from './MealInfo';
-import { NavLink } from 'react-router-dom';
+import { NavLink, Link } from 'react-router-dom';
 
 
 class Header extends Component {
@@ -39,7 +39,7 @@ class Header extends Component {
         return (
             <React.Fragment>
             <Navbar className="py-0" variant="light" id="navbar" sticky='top'>
-                <NavbarBrand id="navbarbrand" href="#home" className="ml-4"><i className="fa fa-cutlery" style={{ color: '#70D07B' }} />  Yummy App</NavbarBrand>
+            <Link to='./home'><NavbarBrand id="navbarbrand" href="#home" className="ml-4"><i className="fa fa-cutlery" style={{ color: '#70D07B' }} />  Yummy App</NavbarBrand></Link>
                 <Nav className="mr-auto nav">
                     <NavLink className="nav-link" to="/home">Home</NavLink>
                     <NavLink className="nav-link" to="/meals">Meals</NavLink>
